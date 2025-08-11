@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form and Content</title>
+</head>
+<body>
+
+<header>
+    <h1>My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates the use of lists, description lists, tables, embedded media, and a complete HTML5 form with validation.</p>
+</header>
+
+<main>
+    <!-- Lists Section -->
+    <section>
+        <h2>My Favorite Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ul>
+
+        <h3>Steps to Build a Web App</h3>
+        <ol>
+            <li>Plan your project</li>
+            <li>Design the UI</li>
+            <li>Develop the front-end</li>
+            <li>Develop the back-end</li>
+            <li>Deploy to production</li>
+        </ol>
+    </section>
+
+    <!-- Description List Section -->
+    <section>
+        <h2>Programming Terminology</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>The standard markup language for creating web pages.</dd>
+
+            <dt>CSS</dt>
+            <dd>A style sheet language used for describing the look and formatting of a document written in HTML.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>A versatile programming language that enables interactive web pages and applications.</dd>
+        </dl>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Programming Languages Popularity</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Rank</th>
+                    <th>Key Feature</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>1</td>
+                    <td>Easy syntax, versatile</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>2</td>
+                    <td>Runs in browsers, event-driven</td>
+                </tr>
+                <tr>
+                    <td>Kotlin</td>
+                    <td>3</td>
+                    <td>Modern, concise, Android-friendly</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Embedded Media</h2>
+        <div class="media-container">
+            <figure>
+                <img src="https://via.placeholder.com/300x200" alt="Placeholder Image">
+                <figcaption>Sample Image</figcaption>
+            </figure>
+            <figure>
+                <video controls width="300">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <figcaption>Sample Video</figcaption>
+            </figure>
+            <figure>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Your browser does not support HTML5 audio.
+                </audio>
+                <figcaption>Sample Audio</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- HTML5 Form Section -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +254700123456" pattern="^\+?\d{10,15}$" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="4">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">--Select Role--</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="manager">Manager</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Subscribe to newsletter
+                </label>
+
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Enhanced HTML5 Page</p>
+</footer>
+
+</body>
+</html>
